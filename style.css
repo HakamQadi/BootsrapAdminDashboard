@@ -4,7 +4,6 @@
 }
 
 .aside-contsainer {
-    /* background-color: red; */
     width: 300px;
     position: fixed;
     border-right: 2px solid #f8f9fa;
@@ -16,7 +15,6 @@
 }
 
 .main-container {
-    /* background-color: red; */
     margin-left: 300px;
     position: relative;
 
@@ -71,48 +69,77 @@
 }
 
 /* navBar ends */
-
+/* dashboard container */
 #dashboard-container {
-    padding-top: 1.5rem;
+    padding: 30px 3%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #f8f9fa;
-    height: 54.5rem;
-     
-
 }
 
-#dashboard-container h3,
-#dashboard-container p,
-#orders-container h3,
-#orders-container p,
-#products-container h3,
-#products-container p,
-#review-container h3,
-#review-container p {
-    margin-left: var(--margin-left-right);
+
+#charts-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#orders-table tbody a {
+    text-decoration: none;
 }
 
 
 
-
-#orders-container {
+/* orders list container */
+#orders-list-container {
     display: none;
-    padding-top: 1.5rem;
+    padding: 30px 3%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #f8f9fa;
 }
+
+#dropdown-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#dropdown-container a {
+    margin-left: 1rem;
+}
+
+/* order details */
+#orders-details-container {
+    display: none;
+    padding: 30px 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8f9fa;
+}
+
+/* products */
 
 #products-container {
     display: none;
-    padding-top: 1.5rem;
+    padding: 30px 3%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #f8f9fa;
 
 }
 
-#review-container {
-    display: none;
-    padding-top: 1.5rem;
-    background-color: #f8f9fa;
-
+.itemlist {
+    border-bottom: 1px solid #eee;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
 }
+
+.itemlist:hover {
+   background-color: #edf6f5;
+}
+
+
 
 /* aside */
 #logo {
@@ -135,7 +162,6 @@
 
 
 #card-icn {
-    /* background-color: #088178; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,15 +195,15 @@
 }
 
 
-#card{
+#card {
     transition: .5s;
 
 }
 
 
 #card:hover {
-    transform:translateY(-3.5px);
-  }
+    transform: translateY(-3.5px);
+}
 
 
 
@@ -186,9 +212,7 @@
 
 
 /* media */
-@media (max-width:1440px) {}
 
-@media (max-width:1024px) {}
 
 @media (max-width:768px) {
 
@@ -209,11 +233,6 @@
     }
 
 }
-
-@media (max-width:375px) {}
-
-
-@media (max-width:320px) {}
 
 
 
